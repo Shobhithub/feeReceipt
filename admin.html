@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Upload Receipts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <img src="logo.png" alt="">
+    <h2>Admin Dashboard — Upload Receipt</h2>
+    <div id="status" class="muted"></div>
+
+    <label>Student Roll</label>
+    <input id="roll">
+    <label>Batch</label>
+    <input id="batch" placeholder="2023-2027">
+    <label>Semester</label>
+    <select id="semester">
+      <option>I</option><option>II</option><option>III</option><option>IV</option>
+      <option>V</option><option>VI</option><option>VII</option><option>VIII</option>
+    </select>
+    <label>Receipt File</label>
+    <input id="file" type="file" accept="application/pdf,image/*">
+
+    <button id="uploadBtn" class="btn">Upload Receipt</button>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
